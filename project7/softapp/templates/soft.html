@@ -1,0 +1,136 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Savory Spoon</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      color: white;
+    }
+
+    header {
+      background-color: #3cb043;
+      text-align: center;
+      padding: 15px 0;
+    }
+
+    header h1 {
+      margin: 0;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: white;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* ✅ Background image section */
+    .hero {
+      background-image: url("{% static 'image2.png' %}");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 80vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      text-shadow: 2px 2px 6px black;
+    }
+
+    .hero h2 {
+      font-size: 2.8em;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 1.2em;
+      margin-bottom: 20px;
+    }
+
+    .btn {
+      background-color: #FFD700;
+      color: black;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    .intro {
+      background-color: #f8fff8;
+      color: #222;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .intro h2 {
+      color: #1d8a32;
+    }
+
+    .intro img {
+      margin-top: 20px;
+      width: 300px;
+      border-radius: 10px;
+    }
+
+    footer {
+      background-color: #222;
+      text-align: center;
+      padding: 10px;
+      color: #ccc;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Savory Spoon 🍰</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="menu.html">Our Menu</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section with Background Image -->
+  <section class="hero">
+    <h2>Welcome to Savory Spoon</h2>
+    <p>Where every bite tells a story of freshness, flavor, and love.</p>
+    <a href="menu.html" class="btn">See Our Specials</a>
+  </section>
+
+  <!-- About Section -->
+  <section class="intro">
+    <h2>What Makes Us Special?</h2>
+    <p>
+      At Savory Spoon, we believe food is an experience — not just a meal. From our garden-fresh salads 
+      to sizzling sizzlers and homemade desserts, every dish is crafted with care to make you smile with every bite.
+    </p>
+    <img src="{% static 'image4.jpg' %}" alt="Savory Spoon Dishes">
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Savory Spoon | Designed with 💚 by <strong>Muthu Poornima P</strong></p>
+  </footer>
+
+</body>
+</html>
+
